@@ -1,0 +1,10 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" rx="28" fill="#0a0a0a"/>
+  <!-- P shape -->
+  <path d="M42 38C42 36.8954 42.8954 36 44 36H66C76.0457 36 84 43.9543 84 54C84 64.0457 76.0457 72 66 72H57V90C57 91.1046 56.1046 92 55 92H44C42.8954 92 42 91.1046 42 90V38Z M57 58H65C67.7614 58 70 55.7614 70 53C70 50.2386 67.7614 48 65 48H57V58Z" fill="white"/>
+  <!-- Check badge -->
+  <g>
+    <circle cx="92" cy="92" r="22" fill="white" stroke="#0a0a0a" stroke-width="4"/>
+    <path d="M82 92L89 99L102 85" stroke="#0a0a0a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>
