@@ -93,13 +93,13 @@ export default function DashboardPage() {
     <div className="min-h-screen bg-[#fafaf9]">
       <header className="sticky top-0 z-10 border-b border-zinc-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <div className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-zinc-900 text-sm font-bold text-white shadow-sm">P</div>
+          <a href="/" className="flex items-center gap-3">
+            <img src="/logo-mark.svg" alt="Promise Tracker" className="h-9 w-9 rounded-xl shadow-sm" />
             <div>
               <div className="text-[15px] font-semibold tracking-tight text-zinc-900">Promise Tracker</div>
               <div className="text-xs font-medium text-zinc-600">Your commitments • Understood</div>
             </div>
-          </div>
+          </a>
           <div className="flex items-center gap-3">
             <a href="/" className="hidden text-sm font-medium text-zinc-700 hover:text-zinc-900 sm:block">Home</a>
             {isSignedIn ? (
