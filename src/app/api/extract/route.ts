@@ -12,7 +12,8 @@ export async function POST(req: NextRequest) {
   const demoMode = process.env.DEMO_MODE === "true";
   const session: any = await getServerSession(authOptions as any);
   const body = await req.json().catch(() => ({}));
-  const userId: string = session?.user?.email ?? body.fakeUserId ?? "demo@promise-tracker.dev";
+  const userId: string = session?.user?.email ?? (body.pastedText ? "demo@promise-tracker.dev" : "");
+  if (!userId) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
   const today = new Date().toISOString().slice(0, 10);
   const messages: { body: string; recipient: string | null; today: string; source: string; sourceId: string; rfcId: string | null }[] = [];
